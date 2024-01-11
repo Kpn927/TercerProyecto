@@ -1,0 +1,16 @@
+{% extends "principal.html " %}
+
+{% block titulo %}¡Pide Tu Delivery!{% endblock %}
+
+{% block abajo %} 
+
+    <p class="lead">Ingresa tus Datos:  </p>
+
+    <form action="" method="post"> {% csrf_token %}
+
+        {{formulario.as_p}}
+        
+        <input type="submit" value="Listo">
+    </form>
+
+{% endblock %}

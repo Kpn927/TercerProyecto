@@ -1,0 +1,16 @@
+{% extends "principal.html " %}
+
+{% block titulo %}¡Próximos cafes!{% endblock %}
+
+{% block abajo %} 
+
+    <p class="lead">Pide tu Café deseado: </p>
+
+    <form action="" method="post"> {% csrf_token %}
+
+        {{formulario.as_p}}
+        
+        <input type="submit" value="Listo">
+    </form>
+
+{% endblock %}
